@@ -1,8 +1,9 @@
 .hero {
-  height            : 80vh;
+  height            : 100vhvh;
   background        : url('https://source.unsplash.com/random') no-repeat center center/cover;
   color             : white;
   width             : 100% !important;
+  overflow: hidden;
 }
 
 .hero .container {
