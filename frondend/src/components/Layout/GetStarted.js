@@ -163,7 +163,7 @@ const GetStarted = () => {
 
         <div className="get-started-cta-button">
           <Link to='/sign_up'><button className="get-started-cta-button">Sign Up Now</button></Link>
-          <p>Already have an account? <a href="#login">Log In</a></p>
+          <p>Already have an account? <Link to='/login'>Log In</Link></p>
         </div>
       </div>
     </section>

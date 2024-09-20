@@ -7,12 +7,22 @@ import {
     Select,
     RadioGroup,
     HStack,
-    Radio
+    Radio,
+    InputGroup,
+    InputRightElement,
+    Button
 
 } from '@chakra-ui/react'
 import './LoginSignUp.css'
 
 const SignUp = () => {
+    const [showPass, setShowPass] = React.useState(false)
+    const [showConf, setShowConf] = React.useState(false)
+
+    const handlePass = () => setShowPass(!showPass)
+    const handleConfirm = () => setShowConf(!showConf)
+
+
     return (
         <div className='loginSignUpFormContainer'>
             <div className='loginSignUpFormWrapper'>
@@ -21,25 +31,25 @@ const SignUp = () => {
                     <FormControl >
                         <FormLabel>First name</FormLabel>
                         <Input placeholder='First name' />
-                        <br/>
-                        <br/>
+                        <br />
+                        <br />
                         <FormLabel>Last name</FormLabel>
                         <Input placeholder='Last name' />
-                        <br/>
-                        <br/>
+                        <br />
+                        <br />
                         <FormLabel>Email address</FormLabel>
                         <Input type='email' />
                         <FormHelperText>We'll never share your email.</FormHelperText>
-                        <br/>
+                        <br />
                         <Select placeholder='Gender'>
                             <option>Male</option>
                             <option>Female</option>
                         </Select>
-                        <br/>
+                        <br />
                         <FormLabel>Cell No:</FormLabel>
                         <Input type='number' placeholder='Phone number' />
                         <FormHelperText>We'll never share your number.</FormHelperText>
-                        <br/>
+                        <br />
                         <Select placeholder='Select country'>
                             <option>Algeria</option>
                             <option>Angola</option>
@@ -95,16 +105,47 @@ const SignUp = () => {
                             <option>Zambia</option>
                             <option>Zimbabwe</option>
                         </Select>
-                        <br/>
+                        <br />
                         <RadioGroup defaultValue='Itachi'>
                             <HStack spacing='24px'>
                                 <Radio value='Sasuke'>RSA ID No:</Radio>
                                 <Radio value='Nagato'>Passport</Radio>
                             </HStack>
                         </RadioGroup>
-                        <br/>
+                        <br />
                         <FormLabel></FormLabel>
                         <Input placeholder='ID Number' />
+                        <br />
+                        <br />
+                        <FormLabel>Password</FormLabel>
+
+                        <InputGroup size='md'>
+                            <Input
+                                pr='4.5rem'
+                                type={showPass ? 'text' : 'password'}
+                                placeholder='Enter password'
+                            />
+                            <InputRightElement width='4.5rem'>
+                                <Button h='1.75rem' size='sm' onClick={handlePass}>
+                                    {showPass ? <box-icon name='low-vision' color="#FF0000" ></box-icon> : <box-icon name='low-vision' color='#00eeff' ></box-icon>}
+                                </Button>
+                            </InputRightElement>
+                        </InputGroup>
+                        <br />
+                        <FormLabel>Confirm password</FormLabel>
+
+                        <InputGroup size='md'>
+                            <Input
+                                pr='4.5rem'
+                                type={showConf ? 'text' : 'password'}
+                                placeholder='Enter password'
+                            />
+                            <InputRightElement width='4.5rem'>
+                            <Button h='1.75rem' size='sm' onClick={handleConfirm}>
+                                    {showConf ? <box-icon name='low-vision' color="#FF0000" ></box-icon> : <box-icon name='low-vision' color='#00eeff' ></box-icon>}
+                                </Button>
+                            </InputRightElement>
+                        </InputGroup>
                     </FormControl>
                     <br />
                     <div className='loginSignUpButton'>
