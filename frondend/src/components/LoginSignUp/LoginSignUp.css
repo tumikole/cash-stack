@@ -28,21 +28,24 @@
 
 @media only screen and (max-width: 768px) {
     .loginSignUpForm {
-        width           : 100% !important;
+        width : 90% !important;
+        margin: auto;
     }
 
-.loginSignUpButton button {
-    width           : 100% !important;
-}
+    .loginSignUpButton button {
+        width: 100% !important;
+    }
 
 }
 
 
 @media only screen and (max-width: 480px) {
     .loginSignUpForm {
-        width           : 100% !important;
+        width : 90% !important;
+        margin: auto;
     }
+
     .loginSignUpButton button {
-        width           : 100% !important;
+        width: 100% !important;
     }
 }
