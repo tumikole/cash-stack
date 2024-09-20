@@ -5,13 +5,9 @@ import {
   FormHelperText,
   Input,
   Select,
-  RadioGroup,
-  HStack,
-  Radio,
   InputGroup,
   InputRightElement,
   Button,
-  Box,
   Stepper,
   Step,
   StepTitle,
@@ -19,7 +15,6 @@ import {
   StepStatus,
   useSteps,
   VStack,
-  StepDescription,
   StepSeparator
 } from '@chakra-ui/react';
 import './LoginSignUp.css';
