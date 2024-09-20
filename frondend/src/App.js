@@ -4,6 +4,7 @@ import Hero from './components/Layout/Hero';
 import GetStarted from './components/Layout/GetStarted';
 import SignUp from './components/LoginSignUp/SignUp';
 import Login from './components/LoginSignUp/Login';
+import PageNotFound from './components/PageNotFound';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         <Route path="/get_started" element={<GetStarted />} />
         <Route path="/sign_up" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
+        <Route path="*" element={<PageNotFound />} />
+
       </Routes>
     </div>
   );
