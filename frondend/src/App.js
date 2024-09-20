@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Hero from './components/Layout/Hero';
 import GetStarted from './components/Layout/GetStarted';
+import SignUp from './components/LoginSignUp/SignUp';
 
 function App() {
   return (
@@ -11,10 +12,8 @@ function App() {
         {/* <Route path="/" element={<Home />} /> */}
         <Route path="/" element={<Hero />} />
         <Route path="/get_started" element={<GetStarted />} />
-
-        {/* <Route path="/level1" element={<Level1 />} />
-        <Route path="/level2" element={<Level2 />} />
-        <Route path="/level3" element={<Level3 />} /> */}
+        <Route path="/sign_up" element={<SignUp />} />
+       
       </Routes>
     </div>
   );

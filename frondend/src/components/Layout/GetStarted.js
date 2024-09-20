@@ -1,5 +1,6 @@
 import React from 'react';
 import './GetStarted.css';
+import { Link } from 'react-router-dom';
 import {
   Accordion,
   AccordionItem,
@@ -161,7 +162,7 @@ const GetStarted = () => {
         </div>
 
         <div className="get-started-cta-button">
-          <button className="get-started-cta-button">Sign Up Now</button>
+          <Link to='/sign_up'><button className="get-started-cta-button">Sign Up Now</button></Link>
           <p>Already have an account? <a href="#login">Log In</a></p>
         </div>
       </div>
