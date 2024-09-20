@@ -111,12 +111,15 @@ p a:hover {
     font-size: 1.6rem; /* Adjusting header size for smaller screens */
     margin-top: 1.5rem;
     border-bottom: 1px solid #0056b3;
+    padding-bottom: 2rem;
   }
 
   .get-startedSubHeader {
     font-size: 1.4rem;
     margin-top: 1.5rem;
     border-bottom: 1px solid #0056b3;
+    padding-bottom: 2rem;
+
 
   }
 
@@ -124,6 +127,8 @@ p a:hover {
     font-size: 1rem; /* Reduce paragraph text size */
     margin-top: 2rem;
     border-bottom: 1px solid #0056b3;
+    padding-bottom: 2rem;
+
 
   }
 
@@ -172,20 +177,22 @@ p a:hover {
     font-size: 1.6rem; /* Adjusting header size for smaller screens */
     margin-top: 1.5rem;
     border-bottom: 1px solid #0056b3;
+    padding-bottom: 2rem;
+
   }
 
   .get-startedSubHeader {
     font-size: 1.4rem;
     margin-top: 1.5rem;
     border-bottom: 1px solid #0056b3;
-
+    padding-bottom: 2rem;
   }
 
   .level-description p {
     font-size: 1rem; /* Reduce paragraph text size */
     margin-top: 2rem;
     border-bottom: 1px solid #0056b3;
-
+    padding-bottom: 2rem;
   }
 
   .levels-table {
