@@ -53,7 +53,7 @@
   }
 
   .hero .container {
-    margin-top: 10rem;
+    margin-top: 15rem;
     padding: 0 20px;
   }
 
@@ -66,8 +66,7 @@
   }
 
   .stackImagesContainer {
-    grid-template-columns: 50% 50%; /* 2 columns instead of 4 */
-    height: auto;
+    display              : none;
   }
 
   .stackImage {
@@ -89,7 +88,7 @@
   }
 
   .hero .container {
-    margin-top: 8rem;
+    margin-top: 15rem;
   }
 
   .heroHeader {
@@ -101,8 +100,9 @@
   }
 
   .stackImagesContainer {
-    grid-template-columns: 100%; /* 1 column for very small screens */
+    display              : none;
   }
+
 
   .stackImage {
     width: 90% !important; /* Make images larger for mobile view */

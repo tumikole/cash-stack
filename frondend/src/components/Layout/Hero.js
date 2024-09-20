@@ -15,10 +15,12 @@ const Hero = () => {
     return (
         <section className="hero">
             <div className="container">
+                <div className="containerWrapper">
                 <h1 className='heroHeader'>Welcome to Cash Stack</h1>
                 <p className='heroSubHeader'>Your journey to success starts here</p>
                 <div className='heroButton'>
                 <Link to='/get_started' className="cta-button">Get Started</Link>
+                </div>
                 </div>
                 <div className='stackImagesContainer'>
                     <div className='stackImage'>
