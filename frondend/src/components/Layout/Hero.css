@@ -1,0 +1,115 @@
+.hero {
+  height            : 80vh;
+  background        : url('https://source.unsplash.com/random') no-repeat center center/cover;
+  color             : white;
+  width             : 100% !important;
+}
+
+.hero .container {
+  margin-top: 15rem;
+}
+
+.heroButton {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  text-align     : center;
+}
+
+.cta-button {
+  background-color: rgb(61, 183, 61);
+  padding         : 10px 20px;
+  color           : white;
+  text-decoration : none;
+  border-radius   : 5px;
+  margin-top      : 20px;
+  cursor: pointer;
+}
+
+.stackImagesContainer {
+  display              : grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  height               : 30vh;
+  width                : 100% !important;
+  margin               : auto;
+  margin-top           : 5rem;
+}
+
+.stackImage {
+  width: 60% !important;
+  margin: auto;
+}
+
+.stackImage img {
+  width : 100%;
+  margin: auto !important;
+}
+
+/* Media queries for small devices (width < 768px) */
+@media only screen and (max-width: 768px) {
+
+  .hero {
+    height: 60vh;
+  }
+
+  .hero .container {
+    margin-top: 10rem;
+    padding: 0 20px;
+  }
+
+  .heroHeader {
+    font-size: 2rem; /* Adjust header size */
+  }
+
+  .heroSubHeader {
+    font-size: 1.2rem; /* Adjust sub-header size */
+  }
+
+  .stackImagesContainer {
+    grid-template-columns: 50% 50%; /* 2 columns instead of 4 */
+    height: auto;
+  }
+
+  .stackImage {
+    width: 80% !important; /* Adjust image container size */
+  }
+
+  .cta-button {
+    padding: 8px 15px; /* Adjust button padding */
+    font-size: 1rem; /* Adjust button font size */
+  }
+
+}
+
+/* Media queries for extra small devices (width < 480px) */
+@media only screen and (max-width: 480px) {
+
+  .hero {
+    height: 50vh;
+  }
+
+  .hero .container {
+    margin-top: 8rem;
+  }
+
+  .heroHeader {
+    font-size: 1.5rem;
+  }
+
+  .heroSubHeader {
+    font-size: 1rem;
+  }
+
+  .stackImagesContainer {
+    grid-template-columns: 100%; /* 1 column for very small screens */
+  }
+
+  .stackImage {
+    width: 90% !important; /* Make images larger for mobile view */
+  }
+
+  .cta-button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
