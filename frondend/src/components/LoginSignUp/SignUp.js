@@ -18,6 +18,7 @@ import {
   StepSeparator
 } from '@chakra-ui/react';
 import './LoginSignUp.css';
+import { Link } from 'react-router-dom';
 
 const SignUp = () => {
   const steps = ['Personal Details', 'Contact Information', 'Password Setup'];
@@ -34,6 +35,12 @@ const SignUp = () => {
 
   return (
     <div className='loginSignUpFormContainer'>
+        <div className='loginSignUpHomeButton'>
+            <Link to='/'>
+        <box-icon name='home' color='#329795' ></box-icon>
+        <p>Home</p>
+        </Link>
+        </div>
       <div className='loginSignUpFormWrapper'>
         <h1 className='loginSignUHeader'>Sign Up</h1>        
 
@@ -80,7 +87,6 @@ const SignUp = () => {
               <br />
               <FormLabel>Country</FormLabel>
               <Select placeholder='Select Country'>
-                {/* Add country options here */}
               </Select>
               <br />
               <Button onClick={prevStep}>Back</Button>
@@ -98,7 +104,7 @@ const SignUp = () => {
                   placeholder='Enter password'
                 />
                 <InputRightElement width='4.5rem'>
-                  <box-icon name='low-vision' color='#00eeff' onClick={handlePass}></box-icon>
+                  <box-icon name='low-vision' color='#329795' onClick={handlePass}></box-icon>
                 </InputRightElement>
               </InputGroup>
               <br />
@@ -110,7 +116,7 @@ const SignUp = () => {
                   placeholder='Confirm password'
                 />
                 <InputRightElement width='4.5rem'>
-                  <box-icon name='low-vision' onClick={handleConfirm} color='#00eeff'></box-icon>
+                  <box-icon name='low-vision' onClick={handleConfirm} color='#329795'></box-icon>
                 </InputRightElement>
               </InputGroup>
               <br />

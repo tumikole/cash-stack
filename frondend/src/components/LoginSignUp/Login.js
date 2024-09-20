@@ -6,6 +6,7 @@ import {
     InputGroup,
     InputRightElement,
 } from '@chakra-ui/react'
+import { Link } from 'react-router-dom';
 import './LoginSignUp.css'
 
 const Login = () => {
@@ -13,6 +14,12 @@ const Login = () => {
     const handleClick = () => setShow(!show)
     return (
         <div className='loginSignUpFormContainer'>
+            <div className='loginSignUpHomeButton'>
+                <Link to='/'>
+                    <box-icon name='home' color='#329795' ></box-icon>
+                    <p>Home</p>
+                </Link>
+            </div>
             <div className='loginSignUpFormWrapper'>
                 <h1 className='loginSignUHeader'>Login</h1>
                 <div className='loginSignUpForm'>
@@ -30,7 +37,7 @@ const Login = () => {
                                 placeholder='Enter password'
                             />
                             <InputRightElement width='4.5rem'>
-                                 <box-icon name='low-vision' onClick={handleClick} color="#00EEFF" ></box-icon> 
+                                <box-icon name='low-vision' onClick={handleClick} color="#329795" ></box-icon>
                             </InputRightElement>
                         </InputGroup>
                     </FormControl>
