@@ -108,18 +108,23 @@ p a:hover {
 /* Media Queries for small devices (max-width: 768px) */
 @media (max-width: 768px) {
   .get-startedHeader {
-    font-size: 2rem; /* Adjusting header size for smaller screens */
+    font-size: 1.6rem; /* Adjusting header size for smaller screens */
     margin-top: 1.5rem;
+    border-bottom: 1px solid #0056b3;
   }
 
   .get-startedSubHeader {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-top: 1.5rem;
+    border-bottom: 1px solid #0056b3;
+
   }
 
   .level-description p {
-    font-size: 1.25rem; /* Reduce paragraph text size */
+    font-size: 1rem; /* Reduce paragraph text size */
     margin-top: 2rem;
+    border-bottom: 1px solid #0056b3;
+
   }
 
   .levels-table th,
@@ -164,11 +169,23 @@ p a:hover {
 /* Optional: For even smaller screens, such as phones (max-width: 480px) */
 @media (max-width: 480px) {
   .get-startedHeader {
-    font-size: 1.8rem;
+    font-size: 1.6rem; /* Adjusting header size for smaller screens */
+    margin-top: 1.5rem;
+    border-bottom: 1px solid #0056b3;
   }
 
   .get-startedSubHeader {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    border-bottom: 1px solid #0056b3;
+
+  }
+
+  .level-description p {
+    font-size: 1rem; /* Reduce paragraph text size */
+    margin-top: 2rem;
+    border-bottom: 1px solid #0056b3;
+
   }
 
   .levels-table {
