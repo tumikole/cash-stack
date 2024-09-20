@@ -36,6 +36,17 @@
         width: 100% !important;
     }
 
+    .chakra-stepper {
+        margin-top   : 2rem;
+        margin-bottom: 2rem;
+        width : 90% !important;
+        margin: auto;
+    }
+
+    .chakra-step{
+        display: grid !important;
+    }
+
 }
 
 
@@ -43,6 +54,17 @@
     .loginSignUpForm {
         width : 90% !important;
         margin: auto;
+    }
+
+     .chakra-stepper {
+        margin-top   : 2rem;
+        margin-bottom: 2rem;
+        width : 90% !important;
+        margin: auto;
+    }
+
+    .chakra-step{
+        display: grid !important;
     }
 
     .loginSignUpButton button {

@@ -32,15 +32,13 @@ const Login = () => {
                                 placeholder='Enter password'
                             />
                             <InputRightElement width='4.5rem'>
-                                <Button h='1.75rem' size='sm' onClick={handleClick}>
-                                    {show ? <box-icon name='low-vision' color="#FF0000" ></box-icon> : <box-icon name='low-vision' color='#00eeff' ></box-icon>}
-                                </Button>
+                                 <box-icon name='low-vision' onClick={handleClick} color="#00EEFF" ></box-icon> 
                             </InputRightElement>
                         </InputGroup>
                     </FormControl>
                     <br />
                     <div className='loginSignUpButton'>
-                        <button className='btn btn-outline-info'>Sign up</button>
+                        <button className='btn btn-outline-info'>Login</button>
                     </div>
                 </div>
             </div>
