@@ -1,4 +1,4 @@
 [build]
-  base = "./frontend"          # Frontend directory
+  base = "./frondend"          # Frontend directory
   publish = "build"            # Build output directory
   command = "npm run build"    # Build command
